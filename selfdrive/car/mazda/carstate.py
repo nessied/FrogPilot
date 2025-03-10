@@ -100,7 +100,7 @@ class CarState(CarStateBase):
     # it should be enabled (steer lockout). Don't warn until we actually get lkas active
     # and lose it again, i.e, after initial lkas activation
     # ret.steerFaultTemporary = self.lkas_allowed_speed and lkas_blocked
-    ret.steerFaultTemporary = false
+    ret.steerFaultTemporary = False
 
     self.acc_active_last = ret.cruiseState.enabled
 
